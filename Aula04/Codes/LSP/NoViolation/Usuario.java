@@ -6,8 +6,5 @@ public class Usuario implements Autenticavel {
         this.nome = nome;
     }
 
-    public void acessarSistema() {
-        System.out.println(nome + " acessou o sistema.");
-    }
     
 }
