@@ -19,11 +19,8 @@ public class ProductEntity {
     private Double price;
     private Integer stock;
 
-    // Construtor vazio padrão (obrigatório para o JPA funcionar)
     public ProductEntity() {
     }
-
-    // --- GETTERS E SETTERS ---
 
     public Long getId() {
         return id;
