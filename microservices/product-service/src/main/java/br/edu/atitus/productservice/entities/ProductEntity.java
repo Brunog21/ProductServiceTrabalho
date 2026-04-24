@@ -1,17 +1,14 @@
 package br.edu.atitus.productservice.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "tb_product")
 public class ProductEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private Integer id;
     private String description;
     private String brand;
     private String model;
@@ -19,17 +16,14 @@ public class ProductEntity {
     private Double price;
     private Integer stock;
 
-    // Construtor vazio padrão (obrigatório para o JPA funcionar)
     public ProductEntity() {
     }
 
-    // --- GETTERS E SETTERS ---
-
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
